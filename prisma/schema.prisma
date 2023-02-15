@@ -65,7 +65,7 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model BuilderOrder {
+model BuildOrder {
   id      String @id @default(cuid())
   matchUp String
   build   String
